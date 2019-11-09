@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="searchcollapse.js"></script>
+
+    <title>Newsweek Clone</title>
+  </head>
+  <body>
+    
+    <div class="fluid-container">
+      <header class="page-header">
+        <nav class="header-top navbar">
+          <section id="edition-date"> <date>Tue, Nov 05, 2019 </date> </section>
+          <section class="subscribe">
+            <a href="" class="link-1 lk-color lk-font">SIGN IN</a>
+            <a href="" class="lk-font link-2">SUBSCRIBE <span id="arrow"> > </span> </a>
+          </section>
+        </nav>
+        <nav class="header-middle navbar">
+          <a href="#" class="lk-color">Newsweek</a>
+          <a href="#"> <i class="fas fa-bars text-white"></i> </a>
+        </nav>
+        <nav class="header-bottom navbar navbar-expand-lg " id="nav-menu">
+
+          <button class="navbar-toggler" data-toggle="collapse" data-target="hb-bar">
+              <span>  <i class="fas fa-bars text-white"></i> </span>
+          </button>
+
+          <a href="#" class="navbar-brand">Newsweek</a>
+
+          <div class="collapse navbar-collapse" id="hb-bar">
+
+            <ul class="navbar-nav nav-fill">
+              <li class="nav-item separator"><a href="#">U.S.</a></li>
+              <li class="nav-item separator"><a href="#">World</a></li>
+              <li class="nav-item separator"><a href="#">Business</a></li>
+              <li class="nav-item separator"><a href="#">Tech & Science</a></li>
+              <li class="nav-item separator"><a href="#">Culture</a></li>
+              <li class="nav-item separator"><a href="#">Newsgeek</a></li>
+              <li class="nav-item separator"><a href="#">Sports</a></li>
+              <li class="nav-item separator"><a href="#">Health</a></li>
+              <li class="nav-item separator"><a href="#">Opinion</a></li>
+              <li class="nav-item separator"><a href="#">Vantage</a></li>
+              <li class="nav-item icon-dlb"> <a href="#" class="ndelible">Ndelible</a> </li>
+            </ul>
+          </div>
+          <div class="search-field">
+            <input type="text" id="s-field" placeholder="Search" onfocus="changeDim();"
+                     onblur="changeDim('60px');">
+            <div class="filter-image">
+              <h2>Search</h2>
+            </div>
+          </div>
+        </nav>
+      </header>
+<!-- ok above -->
+
+      <main class="fluid-container">
+        <div class="row sc-ct">
+          <div class="col-sm-3" id="first">
+            <div class="wrap f-stories">
+            <article>
+              <div class="wrap">
+                <h2 class="section-title"> Featured Stories</h2>
+                <a href="#"> <img src="assets/featured01.jpg" alt=""> </a>
+                <div class="category"> <a href="#">U.S.</a></div>
+              </div>
+              <h3><a href="#">U.S. Poised to Remain the 'Great Satan' in Iran for Decades</a></h3>
+              <div class="summary">
+              This week marks the 40th anniversary of the storming of the U.S. Embassy in Tehran, an event that continues to influence the standoff between the U.S. and Iran.
+              </div>
+              <ul class="related">
+                <li>
+                  <a itemprop="relatedLink">Iran Shows Off Nuclear Capabilities, Announces More Nuke Deal Scale-Backs</a>
+                </li>
+              </ul>
+            </article>
+            <!--  -->
+            <article>
+              <div class="wrap">
+                <a href="#"> <img src="assets/featured02.jpg" alt=""> </a>
+                <div class="category"> <a href="#">U.S.</a></div>
+              </div>
+              <h3><a href="#">Celebrities Urge Americans to Vote 'Like Your Rights Depend on It'</a></h3>
+              <div class="summary">
+                Many of them shared how they were voting and stressed Virginia's election for the Equal Rights Amendment.              
+              </div>
+            </article>
+            <!--  -->
+            <article>
+              <div class="wrap">
+                <img src="assets/featured03.jpg" alt="">
+                <div class="category"> <a href="#">U.S.</a></div>
+              </div>
+              <h3><a href="">Thousands of Scientists Around the World Unite to Declare Climate Emergency</a></h3>
+              <div class="summary">
+                One of the article's signatories, Thomas Newsome at the University of Sydney, described a "moral obligation" for scientists to warn the public of any major threats to humanity.              
+              </div>
+            </article>
+            <!--  -->
+            <article>
+              <div class="wrap">
+                <img src="assets/featured04.jpg" alt="">
+                <div class="category"> <a href="#">SURVEY</a></div>
+              </div>
+              <h3><a href="">Best Customer Service 2020</a></h3>
+              <div class="summary">
+                For the second year in a row, we worked with Statista to collect and analyze data across 160 retail categories.              
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="col-sm-6 top-story" id="second">
+          <div class="wrap tp-story">
+            <div class="top-story-featured">
+              <article>
+                  <div class="wrap">
+                    <h2 class="section-title"> Top Story</h2>
+                      <a href=""> <img src="assets/topstory.jpg" alt=""> </a>
+                    <div class="category"> <a href="#">POLITICS</a></div>
+                  </div>
+                    <h3> <a href="">Democratic and Republican Governors Defy Trump to Uphold Paris Climate Agreement</a> </h3>
+                    <div class="summary"> The Trump administration has formally started the process to pull America out of the landmark Paris climate change agreement. </div>
+              </article>
+            </div>
+          <div class="top-story-more">
+              <h2 class="block-title">More Stories</h2>
+              <article>
+                  <div class="image">
+                    <img src="assets/morestories01.jpg" alt="">
+                  </div>
+                  <h4><a href="">The Literary Influences of Superstar Musician David Bowie</a></h4>
+                  <div class="summary">
+                      Bowie was more than a multi-platinum rock and roller. He was also one of the more literate composers in the business.                  
+                  </div>
+                </article>
+                <article>
+                    <div class="image">
+                      <img src="assets/morestories02.jpg" alt="">
+                    </div>
+                    <h4><a href="">9 Larger-Than-Life Sculpture Parks Around the World</a></h4>
+                    <div class="summary">
+                        Across the globe, sculpture parks present imposing works (and even ideas) that are too large to be contained within four walls.                    </div>
+                </article>
+                <article>
+                    <div class="image">
+                      <img src="assets/morestories03.jpg" alt="">
+                    </div>
+                    <h4><a href="">The World's Best Flea Markets</a></h4>
+                    <div class="summary">
+                        These flea markets are internationally renowned, not just because of their size, but because of the varied goods on sale—priceless art treasures, vintage clothing, jewelry and first-edition books.                  </div>
+                </article>
+                <article>
+                    <div class="image">
+                      <img src="assets/morestories04.jpg" alt="">
+                    </div>
+                    <h4><a href="">Saba: The Greatest Little Island You Never Heard Of</a></h4>
+                    <div class="summary">
+                        Islanders call Saba "The Unspoiled Queen of the Caribbean" for its pristine landscapes and striking biodiversity as well as the absence of crowds, chain stores, and cruise ship throngs.                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3" id="third">
+              <div class="wrap r-sidebar">
+                  <div class="block-opinion">
+                    <h2 class="section-title"> Opinion</h2>
+                    <ul>
+                      <li class="line">
+                          <div class="img-opinion">
+                              <img src="assets/opinion01.jpg" alt="">
+                          </div>
+                          <div class="info-opinion">
+                              <a href="#"> Mike Pence Knew </a>
+                              <div class="info-by"> BY <a href="">GREG OLEAR</a> </div>
+                          </div>
+                        </li>
+
+                        <li class="line">
+                            <div class="img-opinion">
+                                <img src="assets/opinion02.jpg" alt="">
+                            </div>
+                            <div class="info-opinion">
+                                <a href="#">Twitter and Facebook Are Bullhorns for Lies. We Must Break Them Up</a>
+                                <div class="info-by"> BY <a href="">ROBERT REICH</a> </div>
+                            </div>
+                          </li>
+
+                          <li class="line">
+                              <div class="img-opinion">
+                                  <img src="assets/opinion03.jpg" alt="">
+                              </div>
+                              <div class="info-opinion">
+                                  <a href="#">Congress Failed Katie Hill</a>
+                                  <div class="info-by"> BY <a href="">MARY ANNE FRANKS</a> </div>
+                              </div>
+                            </li>
+
+                            <li class="line">
+                                <div class="img-opinion">
+                                    <img src="assets/opinion04.jpg" alt="">
+                                </div>
+                                <div class="info-opinion">
+                                    <a href="#">The Hostage Crisis Is Harming U.S.-Iran Relations Today. Yet Few Understand It</a>
+                                    <div class="info-by"> BY <a href="">ASSAL RAD</a> </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                              <!-- HAVE MORE CAN ADD -->
+                          <div class="block-latest">
+                              <h2 class="block-title">Latest News</h2>
+                              <ul>
+                                  <li>
+                                      <div class="image">
+                                          <img src="assets/latest01.jpg" alt="">
+                                      </div>
+                                      <div class="latest-info">
+                                          <a href="">Smoking Could Raise Risk of Developing Depression and Schizophrenia</a>
+                                      </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="image">
+                                            <img src="assets/latest02.jpg" alt="">
+                                        </div>
+                                        <div class="latest-info">
+                                            <a href="">Shelter Hopes Black Cat Adoptions FInd Good Luck After Dallas Cowboys Win</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="image">
+                                            <img src="assets/latest03.jpg" alt="">
+                                        </div>
+                                        <div class="latest-info">
+                                            <a href="">GOP Candidate Charged With Distributing Fake Sample Ballots on Election Day</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="image">
+                                            <img src="assets/latest04.jpg" alt="">
+                                        </div>
+                                        <div class="latest-info">
+                                            <a href="">Evangelical-Muslim Conference Brings College Students Together To Solve 'the Greatest Interreligious Challenge of Our Time'</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="image">
+                                            <img src="assets/latest05.jpg" alt="">
+                                        </div>
+                                        <div class="latest-info">
+                                            <a href="">How to Watch 'The Little Mermaid Live!': Time, Network and More</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="image">
+                                            <img src="assets/latest06.jpg" alt="">
+                                        </div>
+                                        <div class="latest-info">
+                                            <a href="">Spinal Tap Turns it Up to 11 After Settling Copyright Dispute</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="image">
+                                            <img src="assets/latest07.jpg" alt="">
+                                        </div>
+                                        <div class="latest-info">
+                                            <a href="">Mega Millions Drawing For 11/05/19: Tuesday Jackpot is $127 Million</a>
+                                        </div>
+                                    </li>
+                                  </ul>
+                                  <div class="newsletter">
+                                      <div class="n-title">
+                                        <span class="icon-n"></span>
+                                        Sign up for our Newsletter
+                                      </div>
+                                      <a href="" class="signup-lk">SIGN UP ></a> <br>
+                                      <a href="" class="upprefs-lk">Update your preferences >></a>
+                                  </div>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="magazine">
+                              <div class="row top">
+                                  <div class="col-sm-3" id="cover-magazine">
+                                    <div class="wrap cover-footer">
+                                      <div class="picture">
+                                        <a href=""> <img src="assets/magazine01.jpg" alt=""></a>
+                                      </div>
+                                      <div class="category"> <a href="">November 15 Issue</a> </div>
+                                    </div>
+                                    <a href="#" class="lk-all-features">See All Features ></a>
+                                  </div>
+                                  <div class="col-sm-9" id="articles">
+                                  <div class="n-title">
+                                      <span class="icon-n"></span>
+                                      In the Magazine
+                                  </div>
+                                  <div class="row wrap mag-feat">
+
+                                  <article class="col-sm-4">
+                                      <div>
+                                          <a href="#">
+                                            <picture width="391" height="261">
+                                              <img src="assets/magazine02.jpg" alt="">
+                                            </picture>
+                                          </a>
+                                        </div>
+                                        <div class="category">
+                                            <span class="mag-cat">Cover</span>
+                                            <span class="cat"> <a href="#">POLITICS</a></span>
+                                        </div>
+                                        <h5> <a href=""> Andrew Yang: Math, Jobs and the Robot Future </a> </h5>
+                                    </article>
+
+                                    <article class="col-sm-4">
+                                        <div>
+                                          <a href="">
+                                            <picture width="391" height="261">
+                                              <img src="assets/magazine03.jpg" alt="">
+                                            </picture>
+                                          </a>
+                                        </div>
+                                        <div class="category">
+                                          <span class="mag-cat">PERISCOPE</span>
+                                          <span class="cat"><a href="#">WORLD</a></span>
+                                        </div>
+                                        <h5><a href="#">Tug of War: Photographs Capture Horror of Turkey's Offensive Into Syria</a></h5>
+                                      </article>
+
+                                      <article class="col-sm-4">
+                                          <div>
+                                            <a href="#">
+                                              <picture width="391" height="261">
+                                                <img src="assets/magazine04.jpg" alt="">
+                                              </picture>
+                                              <div class="category">
+                                                <span class="mag-cat">PERISCOPE</span>
+                                                <span class="cat"><a href="#">POLITICS</a></span>
+                                              </div>
+                                              <h5><a href="#">Sheldon Whitehouse On Impeachment, Court-Packing and "Getting to 67 Votes"</a></h5>
+                                            </a>
+                                          </div>
+                                        </article>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row bottom">
+                                      <article class="col-sm-3">
+                                          <div>
+                                              <a href="#">
+                                                  <picture width="391" height="261">
+                                                      <img src="assets/magazine05.jpg" alt="">
+                                                  </picture>
+                                              </a>
+                                          </div>
+                                          <div class="category">
+                                              <span class="mag-cat">DOWNTIME</span>
+                                              <span class="cat"><a href="#">CULTURE</a></span>
+                                            </div>
+                                            <H5><a href="#">The Literary Influences of Superstar Musician David Bowie</a></H5>
+                                        </article>
+
+                                        <article class="col-sm-3">
+                                            <div>
+                                              <a href="">
+                                                <picture width="391" height="261">
+                                                  <img src="assets/magazine06.jpg" alt="">
+                                                </picture>
+                                              </a>
+                                            </div>
+                                            <div class="category">
+                                              <span class="mag-cat">Features</span>
+                                              <span class="cat"><a href="#">CULTURE</a></span>
+                                            </div>
+                                            <H5><a href="#">9 Larger-Than-Life Sculpture Parks Around the World</a></H5>
+                                          </article>
+
+                                          <article class="col-sm-3">
+                                              <div>
+                                                <a href="#">
+                                                  <picture width="391" height="261">
+                                                    <img src="assets/magazine07.jpg" alt="">
+                                                  </picture>
+                                                </a>
+                                              </div>
+                                              <div class="category">
+                                                <span class="mag-cat">Dowtime</span>
+                                                <span class="cat"><a href="#">CULTURE</a></span>
+                                              </div>
+                                              <H5><a href="#">Kelly McCreary on the Writers of 'Grey's Anatomy' and Getting Out the Vote</a></H5>
+                                            </article>
+
+                                            <article class="col-sm-3">
+                                                <div class="wrap big-shots">
+                                                  <picture  width="1035" height="690">
+                                                    <a href=""> <img src="assets/magazine08.jpg" alt=""></a>
+                                                  </picture>
+                                                  <div class="category"> <a href="">IN FOCUS</a> </div>
+                                                </div>
+                                                <h5><a href="">THE QUEEN'S SPEECH</a></h5>
+                                              </article>
+                                            </div>
+                                          </div>
+                                          <div class="editors-pick">
+                                              <div class="n-title">
+                                                  <span class="icon-n"></span>
+                                                  Editor's Pick
+                                                </div>
+                                                <div class="row">
+                                                    <article class="col-sm-3">
+                                                        <div class="wrap">
+                                                          <a href="#">
+                                                            <picture> <img src="assets/editor01.jpg" alt=""> </picture>
+                                                          </a>
+                                                          <div class="category"> <a href="#">POLITICS</a></div>
+                                                        </div>
+                                                        <h3> <a href="#">Trump Campaign's Meal Contests 'Out-and-Out Fraud' if Nobody Wins: Lawyer</a> </h3>
+                                                        <div class="summary">
+                                                            The Trump 2020 campaign says people are winning the money-raising contests to meet the president but there is little public evidence that they are.
+                                                        </div>
+                                                    </article>
+
+                                                    <article class="col-sm-3">
+                                                        <div class="wrap">
+                                                          <a href="#">
+                                                            <picture> <img src="assets/editor02.jpg" alt=""> </picture>
+                                                          </a>
+                                                          <div class="category"> <a href="#">TECH & SCIENCE</a></div>
+                                                        </div>
+                                                        <h3> <a href="#">Amazon Rainforest Is Drying Out Due to Human Activities, Scientists Say</a></h3>
+                                                        <div class="summary">
+                                                            The Amazon rainforest is important to the global climate because of its role in storing vast amounts of carbon dioxide.
+                                                        </div>
+                                                      </article>
+
+                                                      <article class="col-sm-3">
+                                                          <div class="wrap">
+                                                            <a href="#">
+                                                              <picture>
+                                                                <img src="assets/editor03.jpg" alt="">
+                                                              </picture>
+                                                            </a>
+                                                            <div class="category"> <a href="#">NEWS</a></div>
+                                                          </div>
+                                                          <h3> <a href="#">Trump Withdrawal From Paris Accord Will Leave U.S. 'Edged Out': Macron</a></h3>
+                                                          <div class="summary">
+                                                              The French president warned that America's withdrawal will not derail the initiative, and said he deplores such a move.
+                                                          </div>
+                                                        </article>
+
+                                                        <article class="col-sm-3">
+                                                            <div class="wrap">
+                                                              <a href="#">
+                                                                <picture>
+                                                                  <img src="assets/editor04.jpg" alt="">
+                                                                </picture>
+                                                              </a>
+                                                              <div class="category"> <a href="#">HEALTH</a></div>
+                                                            </div>
+                                                            <h3> <a href="#">Cannabis Could Ease Symptoms of Depression in PTSD Patients</a></h3>
+                                                            <div class="summary">
+                                                                "We're only just beginning to understand what the therapeutic potential of cannabis may be for a variety of health conditions," an author of the study said.
+                                                            </div>
+                                                          </article>
+                                                        </div>
+                                                        <div class="row">
+                                                            <article class="col-sm-3">
+                                                                <div class="wrap">
+                                                                  <a href="#">
+                                                                    <picture> <img src="assets/editor05.jpg" alt=""> </picture>
+                                                                  </a>
+                                                                  <div class="category"><a href="#">HEALTH</a></div>
+                                                                </div>
+                                                                <h3><a href="#">Clitoris Isn't Just for Female Pleasure. It Also Helps With Reproduction</a></h3>
+                                                                <div class="summary">
+                                                                  <span>
+                                                                      The research could change our understanding of the female anatomy.
+                                                                  </span>
+                                                                </div>
+                                                              </article>
+
+                                                              <article class="col-sm-3">
+                                                                  <div class="wrap">
+                                                                    <a href="#">
+                                                                      <picture> <img src="assets/editor06.jpg" alt=""> </picture>
+                                                                    </a>
+                                                                    <div class="category"><a href="#">U.S.</a></div>
+                                                                  </div>
+                                                                  <h3><a href="">Why Celebrities Are Demanding Death Row Inmate Rodney Reed Be Released</a></h3>
+                                                                  <div class="summary">
+                                                                    <span>
+                                                                        Rihanna, Gigi Hadid and Kim Kardashian are among those urging the death row inmate be freed following new evidence.
+                                                                    </span>
+                                                                  </div>
+                                                                </article>
+
+                                                                <article class="col-sm-3">
+                                                                    <div class="wrap">
+                                                                      <a href="#">
+                                                                        <picture> <img src="assets/editor07.jpg" alt=""> </picture>
+                                                                      </a>
+                                                                      <div class="category"><a href="#">WORLD</a></div>
+                                                                    </div>
+                                                                    <h3><a href="">North Korea Says Official Threatened in New York City with Photos, Alcohol</a></h3>
+                                                                    <div class="summary">
+                                                                      <span>
+                                                                          A recent United Nations report detailed North Korea's claim that one of its senior officials received a mysterious package that included a threatening letter, pictures and bottles of alcohol.
+                                                                      </span>
+                                                                    </div>
+                                                                  </article>
+
+                                                                  <article class="col-sm-3">
+                                                                      <div class="wrap">
+                                                                       <a href="#">
+                                                                         <picture> <img src="assets/editor08.jpg" alt=""> </picture>
+                                                                       </a>
+                                                                       <div class="category"><a href="#">U.S.</a></div>
+                                                                     </div>
+                                                                     <h3><a href="">Democrat Strategist Blames Sexism For Warren's Poor Swing State Polling</a></h3>
+                                                                     <div class="summary">
+                                                                       <span>
+                                                                          Andrew Feldman questioned whether the United States was ready to elect a female president on Rising with Krystal & Saagar yesterday.
+                                                                       </span>
+                                                                     </div>
+                                                                   </article>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="section-picks">
+                                                                    <div class="block-title">
+                                                                        <a href="#">Sports</a>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-4">
+                                                                            <article>
+                                                                                <a href="#">
+                                                                                  <picture> <img src="assets/sports01.jpg" alt=""></picture>
+                                                                                </a>
+                                                                                <h3><a href="#">Shayna Baszler Talks NXT Invasion and War Games</a></h3>
+                                                                              </article>
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                <article>
+                                                                                  <a href="#">
+                                                                                    <picture> <img src="assets/sports02.jpg" alt=""></picture>
+                                                                                  </a>
+                                                                                  <h3><a href="#">Sportsbooks Continue to Favor Clemson Despite No. 5 CFP Ranking</a></h3>
+                                                                                </article>
+                                                                              </div>
+                                                                              <!--  -->
+                                                                              <div class="col-sm-4 sp-subfeatued">
+                                                                                  <ul>
+                                                                                    <li class="sp-row">
+                                                                                      <div class="image">
+                                                                                        <a href="#">
+                                                                                          <picture><img src="assets/side01.jpg" alt=""></picture>
+                                                                                        </a>
+                                                                                      </div>
+                                                                                      <div class="info">
+                                                                                        <a href="#">Lokomotiv Moscow vs. Juventus: Serie A Giants Look to Remain Top of Group D</a>
+                                                                                      </div>
+                                                                                    </li>
+                                                                                    <li class="sp-row">
+                                                                                      <div class="image">
+                                                                                        <a href="#">
+                                                                                          <picture><img src="assets/side02.jpg" alt=""></picture>
+                                                                                        </a>
+                                                                                      </div>
+                                                                                      <div class="info">
+                                                                                        <a href="#">UEFA Champions League: Real Madrid vs. Galatasaray Preview</a>
+                                                                                      </div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                      <div class="image">
+                                                                                        <a href="#">
+                                                                                          <picture><img src="assets/side03.jpg" alt=""></picture>
+                                                                                        </a>
+                                                                                      </div>
+                                                                                      <div class="info">
+                                                                                        <a href="#">CFP Playoff Rankings Disrupt LSU-Alabama Game as No. 1 vs. No. 2</a>
+                                                                                      </div>
+                                                                                    </li>
+                                                                                  </ul>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </main>
+
+                                                                          <footer class="">
+                                                                              <div class="ft-flex fx-content">
+                                                                                <div class="ft-flex fx-align">
+                                                                                  <a class="brand" href="#">Newsweek</a>
+                                                                                  <p class="copyright">
+                                                                                    &copy 2018 <a href="#"> Newsweek llc </a>
+                                                                                  </p>
+                                                                                </div>
+                                                                                <ul class="ft-flex fx-align">
+                                                                                  <li>
+                                                                                    <a href="#" class="ft-social-icon">
+                                                                                      <i class="fab fa-facebook"></i>
+                                                                                    </a>
+                                                                                  </li>
+                                                                                  <li>
+                                                                                    <a href="#" class="ft-social-icon">
+                                                                                      <i class="fab fa-twitter"></i>
+                                                                                    </a>
+                                                                                  </li>
+                                                                                  <li>
+                                                                                    <a href="#" class="ft-social-icon">
+                                                                                      <i class="fab fa-google-plus-g"></i>
+                                                                                    </a>
+                                                                                  </li>
+                                                                                  <li>
+                                                                                    <a href="#" class="ft-social-icon">
+                                                                                      <i class="fab fa-instagram"></i>
+                                                                                    </a>
+                                                                                  </li>
+                                                                                  <li>
+                                                                                    <a href="#" class="ft-social-icon">
+                                                                                      <i class="fab fa-tumblr"></i>
+                                                                                    </a>
+                                                                                  </li>
+                                                                                  <li>
+                                                                                    <a href="#" class="ft-social-icon">
+                                                                                      <i class="fab fa-linkedin-in"></i>
+                                                                                    </a>
+                                                                                  </li>
+                                                                                </ul>
+                                                                              </div>
+                                                                              <div class="ft-links">
+                                                                                <div class="row ft-menus">
+                                                                                <div class="ft-links-menu fx-content col-md-7">
+                                                                                  <ul>
+                                                                                    <li class="ft-leaf"> <a href="#">About Us</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Corrections</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Contact Us</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Editorial Guidlines</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Advertise</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Copyright</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Terms & Conditions</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Privacy Policy</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Cookie Policy</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Terms of Sale</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Archive</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Announcements</a> </li>
+                                                                                    <li> <a href="#">Consent preferences</a> </li>
+                                                                                  </ul>
+                                                                                </div>
+                                                                                <div class="ft-edition col-md-4 offset-md-1">
+                                                                                  <label> <strong> Editions: </strong> </label>
+                                                                                  <ul>
+                                                                                    <li class="ft-leaf"> <a href="#">U.S. Edition</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">日本</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">한국</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Pakistan</a> </li>
+                                                                                    <li class="ft-leaf"> <a href="#">Polska</a> </li>
+                                                                                    <li> <a href="#">România</a> </li>
+                                                                                  </ul>
+                                                                                </div>
+                                                                              </div>
+                                                                              </div>
+                                                                            </footer>
+                                                                          </div>
+      </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
